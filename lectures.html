@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="lib/css/bootstrap.css">
-    <title>ECNU-SEI-SUMMERSCHOOL2023</title>
+    <title>ECNU-SEI-SUMMERSCHOOL2025</title>
 
     <style>
         .col-lg-12 {
@@ -46,7 +46,7 @@
     <div class="row">
         <a name="home"></a>
         <div class="col-lg-12">
-            <img src="imgT/banner2024.png" class="img-fluid" alt="...">
+            <img src="imgT/banner2025.jpg" class="img-fluid" alt="...">
         </div>
     </div>
 </div>
@@ -93,80 +93,144 @@
             <h3>Introduction to the Lecturers</h3>
             <hr>
             <div class="col-15">
-                <h4>Naijun Zhan</h4>
+                <h4>Jingsong Dong</h4>
                 <P>
-                    <img src="imgT/zhan.png" class="photo" width="180px"/>
-                    Naijun Zhan is a distinguished professor in the School of Computer Science of Peking University. He got his bachelor degree and master degree both from Nanjing University, and his PhD from ISCAS. Prior to join Peking University, he worked at the Faculty of Mathematics and Informatics, Mannheim University, Germany as a research fellow, and afterwards worked at Institute of Software Chinese Academy of Sciences (ISCAS) as an associate professor, a full professor, and a distinguished professor. His research interests cover formal design of real-time, embedded and hybrid systems, program verification, modal and temporal logics, and so on. He is in the editorial boards of Journal of Automated Reasoning, Formal Aspects of Computing, Journal of Logical and Algebraic Methods in Programming, Journal of Software, Journal of Electronics, and Journal of Computer Research and Development and so on, a member of the steering committees of SETTA and MEMOCODE, the PC co-chairs of FM 2021, SETTA 2016, the general co-chairs of MEMOCODE 2018, MEMOCODE2019 and ICESS 2019, and serves more than 100 international conferences program committees e.g., CAV, RTSS, HSCC, FM, TACAS, EMSOFT and so on. He published more than 140 papers in international leading journals and conferences, 2 books and 4 book chapters, and edited 4 conference proceedings and 7 journal special issues. See lcs.ios.ac.cn/~znj for more details.    
+                    <img src="img/ecnu_logo.png" class="photo" width="180px"/>
+                    TBD
+                    <br><br><br><br><br><br><br><br>
                 </P>
-                <h5>Formal design theories and tools for safety-critical embedded systems</h5>
+                
+            </div>
+            <hr>
+            <div class="col-15">
+                <h4>Giuseppe De Giacomo</h4>
+                <P>
+                    <img src="imgT/giuseppe.jpg" width="180px" class="photo" />
+                    Giuseppe De Giacomo is a Professor of Computer Science at the Department of Computer Science of the University of Oxford. He has been previously a Professor at the Department of Computer, Control, and Management Engineering of the University of Roma "La Sapienza". His research activity concerns theoretical, methodological, and practical aspects in different areas of AI and CS, most prominently Knowledge Representation, Reasoning about Actions, Generalized Planning, Autonomous Agents, Reactive Synthesis and Verification, Service Composition, Business Process Modeling, and Data Management and Integration. He is an AAAI Fellow, ACM Fellow, and EurAI Fellow. He received an ERC Advanced Grant for the project WhiteMech: White-box Self Programming Mechanisms. He was the Program Chair of ECAI 2020 and KR 2014. He is on the Board of EurAI. He chairs the steering committee of the new EurAI yearly summer school ESSAI.
+                </P>
+                <h5>Game-theoretic Approach to LTLf Planning and Synthesis</h5>
                 <p>
-                    I will report our recent work on model-based formal design of embedded systems. In our approach, one can build a graphical model of a system to be developed with the combination of AADL and Simulink/Stateflow, called AADL+S/S, and then conduct extensive simulation. In order to formally verify the graphical model, we translate AADL+S/S models into HCSP automatically. HCSP is a formal modeling language for hybrid systems, which is an extension of CSP by introducing differential equations to model continuous evolution and several kinds of interrupts to model the interaction between continuous evolution and discrete jumps. Using Hybrid Hoare Logic and its theorem prover, the translated HCSP formal model can be verified. In order to justify the correctness of the translation, we give an inverse translation from HCSP to Simulink, so that the consistency can be checked by co-simulation. Also, we extend He and Hoare’s UTP (Unifying Theories of Programming) to hybrid system by introducing higher-order quantification and differential relation, called Higher-order UTP (HUTP), and define formal semantics of AADL+S/S and HCSP with HUTP so that the correctness of the bidirection translation can be proved theoretically. In order to formal verification of HCSP, we extend classical Hoare logic to hybrid systems, and established Hybrid Hoare Logic (HHL), and develop its theorem provers. Particularly, we solved several open problems on invariant generation for hybrid systems, that is the hardest part in the verification of hybrid system by deduction. Finally, we propose the notion of approximate bisimulation for HCSP so that we can discretize a given HCSP process correctly in the sense of approximate bisimulation. Based on which, we define a set of refinement rules through which we can refine an HCSP process into a piece of SystemC or ANSI-C code, which is approximate bisimilar to the original HCSP process. All the above are supported by a tool chain called MARS. We have applied the above approach to design some real-world case studies.
+                    This course introduces AI planning and program synthesis for tasks (goals) expressed over finite traces. Specifically, borrowing from Formal Methods, we will consider tasks and environment specifications expressed in LTL and in particular its finite trace variant LTLf. We will review the main results and algorithmic techniques to handle planning in nondeterministic domains. Then, we will draw connections with verification, and reactive synthesis, together with their game-theoretic solution techniques. The main catch is that working with these logics can be based on devising suitable 2-player games and finding strategies, i.e., plans, to win them. Specifically, we will cover the following topics: Planning in Nondeterministic Domains, Temporal Logics, LTL, LTLf, PPLTL, Game-theoretic Techniques, and Reactive Synthesis.
                 </p>
             </div>
             <hr>
             <div class="col-15">
-                <h4>Ofer Strichman</h4>
-                <P>
-                    <img src="imgT/strichman.png" width="180px" class="photo" />
-                    Ofer Strichman earned his Ph.D in 2001 from the Weizmann Institute, where he worked, under the supervision of Amir Pnueli, on translation validation for compilers, Bounded Model Checking, and other topics in formal verification. He then was a post-doc in Carnegie Mellon University in Ed Clark's group, where he mostly worked on model-checking, learning, predicate abstraction and decision procedures.
-                    He published two books: "Decision procedures - an algorithmic point of view" together with Daniel Kroening, and "Efficient decision procedures for validation", edited two others and coauthored more than 100 peer-reviewed articles, mostly in formal verification and SAT. In the SAT field he is mostly known for his contributions to linear-time proof manipulations, exploiting symmetries and incremental satisfiability. In formal verification he is mostly known for his invention of 'regression verification' and various decision procedures, mostly for equalities with uninterpreted functions.
+                <h4>John Hughes</h4>
+                <p>
+                    <img src="imgT/hughes.jpg" width="180px" class="photo"/>
+                    John Hughes is a long-time functional programming researcher, one of the designers of Haskell, and also interested in testing since 2000 
+                    when he and Koen Claessen developed the first version of QuickCheck. With Thomas Arts he co-founded a company, Quviq, in 2006, 
+                    to commercialize the ideas, and has helped many customers to apply property-based testing in practice since then. He has held professorships 
+                    at the University of Glasgow and at Chalmers University, and is now Emeritus Professor at the latter. He is a Fellow of the ACM, and holder of 
+                    an ACM SIGPLAN Most Influential Paper award for the original QuickCheck paper.    
+                </p>
+
+                <h5>Property-based testing</h5>
+                <p>
+                    Property-based testing is an approach to software testing that uses
+
+                    generated tests to test software against a formal specification
                     
-                    He won the 2021 CAV award “for pioneering contributions to the foundations of the theory and practice of satisfiability modulo theories (SMT)”.
-                </P>
-                <h5>SAT/SMT - The Engines of Reasoning</h5>
-                <p>
-                    Topics of the lectures:
-                    <ul>
-                    <li>Conjunctive normal form in propositional logic</li>
-                    <li>Two approaches to reasoning: enumeration and deduction</li>
-                    <li>Soundness and completeness of a deduction system</li>
-                    <li>Proof graphs</li>
-                    <li>The resolution deduction system</li>
-                    <li>solving via Conflict Driven Clause Learning (CDCL)</li>
-                    <li>Unsatisfiable cores</li>
-                    <li>Stochastic SAT solving</li>
-                    <li>Incremental SAT solving</li>
-                    <li>Extensions: Pseudo Boolean Solving (PBS) and the Constraints Satisfaction Problem (CSP)</li>
-                    </ul>
+                    expressed as properties. Originating as a library in Haskell, nowadays
+                    
+                    it is supported in most programming languages, and is seeing
+                    
+                    increasing use in industry as well as academia.
+                    
+                     
+                    
+                    In these lectures we will begin with a demonstration of property-based
+                    
+                    testing and some war stories from industrial applications. Then we
+                    
+                    will introduce the fundamentals of property-based testing: properties,
+                    
+                    generators, and shrinkers. We will go on to show how systems with
+                    
+                    internal state are modelled and tested, including some recent features
+                    
+                    inspired by dynamic logic that have been used to test smart
+                    
+                    contracts. Finally we will discuss the importance of gathering
+                    
+                    appropriate statistics when using random testing, and show how unit
+                    
+                    test ideas can be used to suggest useful statistics to collect.
+                    
+                     
+                    
+                    Practical exercises will use Haskell; installation instructions are
+                    
+                    here: https://www.haskell.org/ghcup/install/. The libraries needed can
+                    
+                    be installed by
+                    
+                     
+                    
+                    <li>cabal install QuickCheck
+                    
+                    <li>cabal install quickcheck-dynamic
                 </p>
             </div>
             <hr>
             <div class="col-15">
-                <h4>Thomas A. Henzinger</h4>
-                <p>
-                    <img src="imgT/henzinger.jpg" width="180px" class="photo"/>
-                    Thomas A. Henzinger is professor at the Institute of Science and Technology Austria (ISTA), chair of the Austrian Council for Sciences, Technology, and Innovation (FORWIT), and member of the Scientific Council of the European Research Council (ERC). He holds a Dipl.-Ing. degree in Computer Science from Johannes Kepler University in Linz, Austria, an M.S. degree in Computer and Information Sciences from the University of Delaware, a Ph.D. degree in Computer Science from Stanford University (1991), and Dr.h.c. degrees from Fourier University in Grenoble, France, and from Masaryk University in Brno, Czech Republic. He was Assistant Professor of Computer Science at Cornell University, Professor of Electrical Engineering and Computer Sciences at the University of California, Berkeley, Director at the Max-Planck Institute for Computer Science in Saarbrucken, Germany, and Professor of Computer and Communication Sciences at EPFL in Lausanne, Switzerland. From 2009 until 2022, he was the founding president of ISTA in Klosterneuburg, Austria. His research focuses on the theory of software systems, especially models, algorithms, and tools for the design and verification of reliable software systems. His HyTech tool was the first model checker for mixed discrete-continuous systems. He is a member of the US National Academy of Sciences, the American Academy of Arts and Sciences, Academia Europaea, the German Academy of Sciences (Leopoldina), and the Austrian Academy of Sciences. He is a Fellow of the AAAS, the ACM, and the IEEE. He received the Robin Milner Award of the Royal Society, the EATCS Award of the European Association for Theoretical Computer Science, the Wittgenstein Award of the Austrian Science Fund (FWF), and two Advanced Grants of the ERC.
-                </p>
-                <h4>Djordje Zikelic</h4>
-                <p>
-                    <img src="imgT/dzikelic.png" width="180px" class="photo"/>
-                    Djordje Zikelic is an Assistant Professor of Computer Science at the School of Computing and Information Systems at Singapore Management University. He joined SMU in January 2024.
-                    Prior to joining SMU, He obtained his PhD in computer science in 2023 at the Institute of Science and Technology Austria (ISTA), where he was supervised by Krishnendu Chatterjee and Petr Novotný. For his work on developing a framework for learning and verifying neural controllers in stochastic dynamical systems, he received the 2023 Outstanding Scientific Achievement award at ISTA together with his colleague Mathias Lechner. Before that, he obtained bachelor's and master's degrees in mathematics at the University of Cambridge. 
-                </p>
-                <h5>Trustworthy AI through Neural Certificates, Runtime Monitoring, and Multi-Agent Reasoning</h5>
-                <p>
-                    As artificial intelligence (AI) has achieved impressive results in a variety of applications, there is increased desire to utilize AI also in safety-critical applications such as controlling autonomous agents, critical infrastructure, and healthcare devices. However, our ability to certify the correctness of AI systems lags significantly behind the frontier of AI research, presenting a barrier to the deployment of AI technologies in safety-critical systems. This series of lectures will show how formal methods can be used towards ensuring the safety, reliability, and fairness of AI-based systems.
-
-                    First, we will show how reinforcement learning can be used in synergy with formal methods to solve control tasks that have been out of reach for classical control theory, while providing formal guarantees on the learned controllers with respect to temporal specifications. We will present a learner-verifier framework for jointly learning and formally verifying a neural controller together with a neural correctness certificate. This framework is applicable to very general classes of control systems and control objectives, even in the presence of stochastic uncertainty.
-
-                    Second, we will show how small neural networks can be verified statically with bit-level precision, and how such static methods can be complemented, in the case of large networks, with the runtime monitoring of AI-based systems against formal safety and fairness specifications. For example, a monitor can be used to detect violations or novelties that trigger the retraining of a system, or the monitor may signal with high confidence when a decision maker has become unfair.
-
-                    Third, we show how game-based models and strategic logics can be used to reason about multi-agent scenarios, where some of the agents may collaborate to achieve a common objective and other agents may behave stochastically or adversarially. We illustrate several settings that allow the automatic synthesis of optimal policies for individual agents, and other settings where the synthesis of optimal policies is a formally undecidable problem.
-                </p>
-            </div>
-            <hr>
-            <div class="col-15">
-                <h4>Danny Weyns</h4>
+                <h4>Moshe Y. Vardi</h4>
                 <P>
-                    <img src="imgT/weyns.png" class="photo" width="180px"/>
-                    Danny Weyns is a professor at the Katholieke Universiteit Leuven Belgium and Linnaeus University Sweden. He also holds a position as a Chief Scientist at the Norwegian Research Center. His research interests are in the engineering of self-adaptive systems. His primary foci are trustworthiness and decentralization of self-adaptive systems. Prof. Weyns champions the use of solid empirical methods to validate his research results, recently mostly in the domain of the Internet-of-Things. 
+                    <img src="imgT/moshe.png" class="photo" width="180px"/>
+                    Moshe Y. Vardi is University Professor and the George Distinguish Service
+                    Professor in Computational Engineering. He is the co-recipient of three
+                    IBM Outstanding Innovation Awards, the ACM SIGACT Goedel Prize, the ACM
+                    Kanellakis Award, the ACM SIGMOD Codd Award, the Blaise Pascal Medal, and
+                    the IEEE Computer Society Goode Award.  He is the author and co-author of
+                    over 800 papers, as well as two books: "Reasoning about Knowledge" and
+                    "Finite Model Theory and Its Applications". He is a Guggeheim Fellow, as
+                    well as Fellow of the American Mathematical Society, the Association for
+                    the Advancement of Artificial Intelligence, the Association for Computing
+                    Machinery, the Association for the Advancement of Artificial Intelligence,
+                    the American Association for the Advancement of Science, the Institute for
+                    Electrical and Electronic Engineers, and the Society for Industrial and
+                    Applied Mathematics.  He is a member of the US National Academies of
+                    Science and of Engineering, the American Academy of Arts and Science, the
+                    Royal Society, the European Academy of Science, and Academia Europaea. He
+                    holds honorary titles from the Saarland University in Germany, Orleans
+                    University in France, UFRGS in Brazil, and the University of Liege in
+                    Belgium, the Technical University of Vienna, the University of Edinburgh,
+                    the University of Grenoble, the University of Gothenburg, East China
+                    Normal University, and the University of Calabria. He is Senior Editor of
+                    the Communications of the ACM, after having served for a decade as
+                    Editor-in-Chief.  Vardi's interests focus on automated reasoning, a branch
+                    of Artificial Intelligence with broad applications in computer science ,
+                    including database theory, computational-complexity theory, multi-agent
+                    systems, computer-aided verification, constraint solving, and teaching
+                    logic across the curriculum.
                 </P>
-                <h5>Trustworthy Software Using Self-Adaptation</h5>
+                <h5>Logic in Computer Science</h5>
                 <p>
-                    Engineering software systems that face uncertainty during operation is challenging. Self-adaptation aims to mitigate this challenge. In this series of lectures, I will motivate the need for self-adaptation, highlight the extensive use of self-adaptation in the industry (not necessarily under the name "self-adaptation"), outline the basic principles of self-adaptation, and elaborate on the key aspects of engineering trustworthy software for self-adaptive systems. The lectures are supported by the book "An Introduction to Self-adaptive Systems: A Contemporary Software Engineering Perspective" published by Wiley-IEEE Computer Society. 
+                    <li> Lecture 1:  From Aristotle to the iPhone
+
+                    <li> Lecture 2:  A Logical Revolution
+
+                    <li> Lecture 3: Logic Algorithmics -- from Theory to Practice
+
+                    <li> Lecture 4: Machine learning and logic -- Fast and slow thinking
+
+                    <br>
+                    Each lecture is one-hour long, including Q&A.
                 </p>
             </div>
-            
+            <hr>
+            <div class="col-15">
+                <h4>Nobuko Yoshida</h4>
+                <P>
+                    <img src="img/ecnu_logo.png" class="photo" width="180px"/>
+                    TBD
+                    <br><br><br><br><br><br><br><br>
+                </P>
+                
+            </div>
+            <hr>
+
+
         </div>
     </div>
 </div>
